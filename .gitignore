@@ -1,0 +1,4 @@
+.vscode
+NODE_MODULES
+*.env
+.DS_Store
