@@ -1,10 +1,25 @@
-// //const person: {name: string, age: number} = {
-//     const person = {
+// Object type
+//const person: {name: string, age: number} = {
+var person = {
+    name: "Negasi",
+    age: 27,
+    hobbies: ["Cooking", "Sport"]
+};
+console.log(person.hobbies);
+// Declare an arry that stores string 
+var favFood;
+favFood = ['Mendi'];
+console.log(favFood);
+// Loop through all hobbies and print them all
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby);
+}
+// A function with object type as a parameter
+// function greet (person: {name: string, age: number}){
+//     console.log(`Hello, ${person.name}`)
+// }
+// greet( {
 //     name: "Negasi",
 //     age: 27
-// }
-// console.log(person.name)
-function greet(person) {
-    console.log("Hello, ".concat(person.name));
-}
-greet({ name: "Negasi", age: 27 });
+// })
