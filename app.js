@@ -1,10 +1,13 @@
 // Object type
-//const person: {name: string, age: number} = {
 var person = {
+    // const person = {
     name: "Negasi",
     age: 27,
-    hobbies: ["Cooking", "Sport"]
+    hobbies: ["Cooking", "Sport"],
+    role: ["Admin", 12]
 };
+person.role[1] = 85;
+console.log(person.role);
 console.log(person.hobbies);
 // Declare an arry that stores string 
 var favFood;

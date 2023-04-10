@@ -1,11 +1,14 @@
 // Object type
-//const person: {name: string, age: number} = {
+// const person: {name: string, age: number, hobbies: string[], role: [string, number]} = {
     const person = {
     name: "Negasi",
     age: 27,
-    hobbies: ["Cooking", "Sport"]
+    hobbies: ["Cooking", "Sport"],
+    role: ["Admin", 12]
 }
 
+person.role[0] = 85;
+console.log(person.role)
 console.log(person.hobbies)
 
 // Declare an arry that stores string 
