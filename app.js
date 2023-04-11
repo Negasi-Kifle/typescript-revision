@@ -1,21 +1,13 @@
-function sum(n1, n2) {
-    return n1 + n2;
+var userInput;
+var userName;
+/**
+ *  To assign a varaible with type 'unknown' to a string,
+ *  first check if the type of the input is string
+ */
+if (typeof userInput === 'string') {
+    userName = userInput;
 }
-// Print sum
-function printSum(sum) {
-    console.log("Sum is: ".concat(sum));
+function throwError(message, errorCode) {
+    throw { message: message, errorCode: errorCode };
 }
-// Function as type
-var funcAsType;
-// Store "sum" in "funcAsType"
-funcAsType = sum;
-// Execute funcAsType
-funcAsType(8, 19);
-// Use callback to print sum
-function addAndHandle(n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
-}
-addAndHandle(3, 4, function (sum) {
-    console.log("Handled sum: ".concat(sum));
-});
+throwError("Something went wrong", 500);
