@@ -18,7 +18,7 @@ funcAsType = sum;
 funcAsType(8, 19)
 
 // Use callback to print sum
-function addAndHandle(n1: number, n2: number, cb: (result)=> void){
+function addAndHandle(n1: number, n2: number, cb: (result: number)=> void){
     const result = n1 + n2;
     cb(result)
 }
