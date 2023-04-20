@@ -1,31 +1,25 @@
 "use strict";
-class Department {
+class Departments {
     constructor(id, name) {
         this.id = id;
         this.name = name;
-        // private id: string;
-        // name: string;
-        this.employee = [];
-        // this.id = id;
-        // this.name = name
+        this.employees = [];
+        //
     }
     displayDept() {
-        console.log("This is department of " + this.name + " with id of: " + this.id);
+        console.log("This is dept of: " + this.name + " with id of " + this.id);
     }
-    addEmp(employee) {
-        // this.id = "rtyui";
-        this.employee.push(employee);
+    addEmployee(employee) {
+        this.employees.push(employee);
     }
     getAllEmps() {
-        console.log(this.employee.length);
-        console.log(this.employee);
+        console.log(this.employees);
     }
 }
-const dept = new Department("D001", "Computer Engineering");
-dept.displayDept();
-const deptCopy = { describe: dept.displayDept() };
-deptCopy.describe;
-dept.addEmp("Negasi");
-dept.addEmp("Kiflom");
-// dept.employee[2] = "Kidane"
-dept.getAllEmps();
+class Software extends Departments {
+    constructor(id) {
+        super(id, "Software Engineering");
+    }
+}
+const newDept = new Software("D001");
+newDept.displayDept();
