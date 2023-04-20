@@ -1,5 +1,5 @@
 "use strict";
-class Dept {
+class Departments {
     constructor(id, name) {
         this.id = id;
         this.name = name;
@@ -16,13 +16,10 @@ class Dept {
         console.log(this.employees);
     }
 }
-class Accounting extends Dept {
+class Software extends Departments {
     constructor(id) {
         super(id, "Software Engineering");
     }
-    addEmployee(employee) {
-        this.employees.push(employee);
-    }
 }
-const newDepts = new Software("D001");
+const newDept = new Software("D001");
 newDept.displayDept();

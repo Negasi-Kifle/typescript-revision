@@ -1,5 +1,5 @@
-class Dept{
-    protected employees: string[] = [];
+class Departments{
+    private employees: string[] = [];
     constructor(private id: string, public name: string){
         //
     }
@@ -17,16 +17,12 @@ class Dept{
     }
 }
 
-class Accounting extends Dept{
+class Software extends Departments{
     constructor(id: string){
         super(id, "Software Engineering")
     }
-     
-    addEmployee(employee: string): void {
-        this.employees.push(employee)
-    }
 }
 
-const newDepts = new Software("D001")
+const newDept = new Software("D001")
 
 newDept.displayDept()
