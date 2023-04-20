@@ -1,5 +1,6 @@
 class Dept{
     protected employees: string[] = [];
+    // private employees: string[] = [];
     constructor(private id: string, public name: string){
         //
     }

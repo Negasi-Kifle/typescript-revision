@@ -1,5 +1,6 @@
 "use strict";
 class Dept {
+    // private employees: string[] = [];
     constructor(id, name) {
         this.id = id;
         this.name = name;
