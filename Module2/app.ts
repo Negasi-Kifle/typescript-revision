@@ -1,7 +1,7 @@
 
 console.log("Helloo habibti")
 function sendAnalytics(data: string){
-    const zm = "wert";
+    // const zm = "wert";
     console.log(data)
 }
 
