@@ -13,6 +13,7 @@ class Department {
         console.log("This is department of " + this.name + " with id of: " + this.id);
     }
     addEmp(employee) {
+        // this.id = "rtyui";
         this.employee.push(employee);
     }
     getAllEmps() {
